@@ -1,0 +1,32 @@
+@if ($items)
+<table class="uk-table uk-table-hover uk-table-middle">
+    <thead>
+        <tr>
+            <th class="pk-table-width-minimum"><input type="checkbox" class="js-select-all"></th>
+            <th class="pk-table-min-width-100">@trans('Title')</th>
+            <th class="pk-table-width-100 uk-text-center">@trans('Status')</th>
+            <th class="pk-table-width-200 pk-table-min-width-200">@trans('Hashtag')</th>
+            <th class="pk-table-width-200 pk-table-min-width-200">@trans('Category')</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach ($items as $item)
+        <tr>
+            <td>
+                <input type="checkbox" name="ids[]" class="js-select" value="@( $item.id )">
+            </td>
+            <td>
+                <a href="@url('@faq/faq/edit', ['id' => $item.id])">@( $item.title )</a>
+            </td>
+            <td class="uk-text-center">
+                <a href="#" data-action="@url('@faq/faq/status', ['ids[]' => $item.id, 'status' => $item.status ? '0' : '1'])" title="@( $item.statusText )">
+                    <i class="uk-icon-circle uk-text-@( $item.status ? 'success' : 'danger')" title="@( $item.statusText )"></i>
+                </a>
+            </td>
+            <td class="pk-table-text-break">@($item.hashtag)</td>
+            <td>@($categories[$item.categoryId].title)</td>
+        </tr>
+        @endforeach
+    </tbody>
+</table>
+@endif
