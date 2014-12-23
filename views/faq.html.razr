@@ -17,7 +17,7 @@
                 @set($lastCategoryId=$item.categoryId)
             @endif
 
-            <h3 class="accordion__title"><a href="#@($item.hashtag)">@($item.title)</a></h3>
+            <h3 class="accordion__title" data-hashtag="@($item.hashtag)">@($item.title)</h3>
 
             <div class="accordion__content">
                 @raw($item.content)
