@@ -1,0 +1,15 @@
+{
+    "name": "faq",
+    "version": "0.0.1",
+    "type": "extension",
+    "title": "FAQ",
+    "description": "",
+    "license": "",
+    "authors": [
+        {
+            "name": "Jan Thurau",
+            "email": "jan@janthurau.de",
+            "homepage": ""
+        }
+    ]
+}
