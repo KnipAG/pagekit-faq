@@ -44,7 +44,7 @@
                 <div class="uk-form-row">
                     <label for="form-url" class="uk-form-label">@trans('Hashtag')</label>
                     <div class="uk-form-controls">
-                        <input id="form-url" class="uk-width-1-1" type="text" name="faq[hashtag]" value="@( $item.hashtag )" required="required" pattern="^([a-zA-Z0-9]+)$"/>
+                        <input id="form-url" class="uk-width-1-1" type="text" name="faq[hashtag]" value="@( $item.hashtag )" required="required"/>
                     </div>
                 </div>
 
