@@ -23,6 +23,8 @@ class SiteController extends Controller
     public function indexAction()
     {
         return [
+            'head.title' => 'FAQ | Knip AG',
+            'head.description' => 'Alle häufig gestellten Fragen, sowie ausführliche Antworten dazu findest du in unserer FAQ Sektion.',
             'items' => $this['db.em']->getRepository('Knip\FAQ\Entity\Faq')->query()->get(),
             'categories' => $this['db.em']->getRepository('Knip\FAQ\Entity\FaqCategory')->query()->get()
         ];
