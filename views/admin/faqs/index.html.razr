@@ -1,4 +1,6 @@
-<form id="js-faqs" class="uk-form" action="@url('@faq/faq')" method="post">
+@script('pages-index', 'extension://page/assets/js/pages.js', 'requirejs')
+
+<form id="js-pages" class="uk-form" action="@url('@faq/faq')" method="post">
 
     @section('toolbar', 'show')
         <div class="uk-float-left">

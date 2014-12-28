@@ -2,6 +2,7 @@
 
 namespace Knip\FAQ\Controller;
 
+use Knip\FAQ\Entity\Faq;
 use Pagekit\Framework\Controller\Controller;
 
 
@@ -25,9 +26,10 @@ class SiteController extends Controller
         return [
             'head.title' => 'FAQ | Knip AG',
             'head.description' => 'Alle häufig gestellten Fragen, sowie ausführliche Antworten dazu findest du in unserer FAQ Sektion.',
-            'items' => $this['db.em']->getRepository('Knip\FAQ\Entity\Faq')->query()->get(),
+            'items' => $this['db.em']->getRepository('Knip\FAQ\Entity\Faq')->query()->where(['status' => Faq::STATUS_PUBLISHED])->get(),
             'categories' => $this['db.em']->getRepository('Knip\FAQ\Entity\FaqCategory')->query()->get()
         ];
+
     }
 
 }
