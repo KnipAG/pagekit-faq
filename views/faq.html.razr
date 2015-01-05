@@ -48,7 +48,7 @@
     <div class="teaser__text">
         <p>Aktuelle Informationen über Features der Versionen von Knip.</p>
     </div>
-    <a href="@url('@page/page/index', ['id' => 12])" class="btn--read-more">Mehr lesen</a>
+    <a href="@page/id?id=12" class="btn--read-more">Mehr lesen</a>
 
 </div>
 </div>
