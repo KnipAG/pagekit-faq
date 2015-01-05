@@ -31,24 +31,24 @@
 </section>
 <div class="teaser">
 <div class="teaser__item">
-    <img src="/themes/knip/images/knip-signet.png" alt="Knip Signet" class="teaser__image"/>
+    <img src="/themes/knip/images/icon-pencil.png" alt="Knip Stift" class="teaser__image"/>
 
-    <h2 class="teaser__title">Ask us a question</h2>
+    <h2 class="teaser__title">Anfrage</h2>
 
     <div class="teaser__text">
-        <p>Cannot find the answer you are looking for?</p>
+        <p>Du kannst die Antwort auf deine Frage nicht finden?</p>
     </div>
-    <a href="mailto:info@@knip.ch" class="btn--read-more">Contact Us</a>
+    <a href="mailto:support@@knip.ch" class="btn--read-more">Kontaktiere uns</a>
 </div>
 <div class="teaser__item">
     <img src="/themes/knip/images/knip-signet.png" alt="Knip Signet" class="teaser__image"/>
 
-    <h2 class="teaser__title">Updates and Release Notes</h2>
+    <h2 class="teaser__title">Versionshinweise</h2>
 
     <div class="teaser__text">
-        <p>Get familiar with our latest version and its new features</p>
+        <p>Aktuelle Informationen über Features der Versionen von Knip.</p>
     </div>
-    <a href="@url('@page/page/index', ['id' => 12])" class="btn--read-more">Read more</a>
+    <a href="@url('@page/page/index', ['id' => 12])" class="btn--read-more">Mehr lesen</a>
 
 </div>
 </div>
