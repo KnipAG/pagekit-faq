@@ -1,5 +1,5 @@
-<section class="faq">
-    <div class="faq__inner">
+<section class="section section--faq">
+    <div class="section__inner">
         <h1 class="h1--small">Häufig gestellte Fragen</h1>
 
         @set($lastCategoryId=0)
